@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import "./Style2.css";
 import dressCatImg from "../images/dresses2.jpeg";
 import topCatImg from "../images/shop/topcat.jpg";
@@ -27,9 +28,9 @@ function Categories() {
             </div>
             <div class="col-12 col-sm-9">
               <div class="card-body">
-                <a class="article-title" href="">
+                <NavLink class="article-title" to="/category">
                   Dresses
-                </a>
+                </NavLink>
                 <p class="card-text articleText">
                   From black dresses you’ll wear time and time again to smock
                   styles perfect for the months ahead, our collection of dresses
@@ -57,9 +58,9 @@ function Categories() {
             </div>
             <div class="col-12 col-sm-9">
               <div class="card-body">
-                <a class="article-title" href="">
+                <NavLink class="article-title" to="/category">
                   Tops
-                </a>
+                </NavLink>
                 <p class="card-text articleText">
                   You’ve found your perfect pair of bottoms, now all you need is
                   a top to complete the look. Introducing our edit of tops for
@@ -92,9 +93,9 @@ function Categories() {
             </div>
             <div class="col-12 col-sm-9">
               <div class="card-body">
-                <a class="article-title" href="">
+                <NavLink class="article-title" to="/category">
                   Trousers
-                </a>
+                </NavLink>
                 <p class="card-text articleText">
                   From culottes and crops to wide-leg and skinny styles, our
                   latest edit of women’s trousers and leggings is full of go-to

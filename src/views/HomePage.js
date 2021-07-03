@@ -1,4 +1,5 @@
 import "./Style1.css";
+import { NavLink } from "react-router-dom";
 import trousersCat from "../images/shop/trousers1.jpg";
 import topsCat from "../images/shop/top1.jpg";
 import dressesCat from "../images/shop/dress2.jpg";
@@ -126,9 +127,9 @@ function HomePage() {
                 </div>
                 <div className="col-md-8">
                   <div className="card-body">
-                    <a className=" card-title" rhef="">
+                    <NavLink className=" card-title" to="/categories">
                       Women's Dresses
-                    </a>
+                    </NavLink>
                     <p className="card-text ">
                       ANOK DESIGN has an array of different styles for you to
                       feel yourself in, from mini and midi lengths to lace and
@@ -153,9 +154,9 @@ function HomePage() {
                 </div>
                 <div className="col-md-8">
                   <div className="card-body">
-                    <a className="card-title" href="">
+                    <NavLink className="card-title" to="/categories">
                       Tops
-                    </a>
+                    </NavLink>
                     <p className="card-text">
                       Discover a range of women's tops at ANOK. Crop tops to
                       off-the-shoulder and going-out tops, shop online for every
@@ -182,10 +183,10 @@ function HomePage() {
 
                 <div className="col-md-8">
                   <div className="card-body">
-                    <a className="card-title" href="">
+                    <NavLink className="card-title" to="/categories">
                       Trousers
-                    </a>
-                    <p className="card-text ">
+                    </NavLink>
+                    <p className="card-text">
                       Women's Trousers & Leggings. From culottes and crops to
                       wide-leg and skinny styles, our latest edit of women's
                       trousers and leggings is full of go-to pieces.
