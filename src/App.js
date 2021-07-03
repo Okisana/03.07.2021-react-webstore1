@@ -2,10 +2,11 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import HomePage from "./views/HomePage";
-import AllCategories from "./views/AllCategories";
-import Cart from "./views/Cart";
+import Categories from "./views/Categories";
+
 import Page404 from "./views/Page404";
-import Test from "./views/Test";
+import Category from "./views/Category";
+import Product from "./views/Product";
 function App() {
   return (
     <div>
@@ -15,15 +16,19 @@ function App() {
           <Route exact path="/">
             <HomePage />
           </Route>
-          <Route path="/test">
-            <Test />
+
+          <Route path="/categories">
+            <Categories />
           </Route>
-          <Route path="/allcategories">
-            <AllCategories />
+
+          <Route path="/category">
+            <Category />
           </Route>
-          <Route path="/cart">
-            <Cart />
+
+          <Route path="/product">
+            <Product />
           </Route>
+
           <Route>
             <Page404 />
           </Route>

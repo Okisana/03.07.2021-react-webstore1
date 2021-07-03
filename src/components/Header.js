@@ -43,7 +43,7 @@ function Header() {
               <NavLink className="nav-link " exact to="/">
                 Home
               </NavLink>
-              <NavLink className="nav-link" to="/article">
+              <NavLink className="nav-link" to="/categories">
                 Categories
               </NavLink>
               <NavLink className="nav-link" to="/cart">

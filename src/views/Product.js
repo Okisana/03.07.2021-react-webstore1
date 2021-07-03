@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function AllCategories() {
+function Product() {
   const img1 =
     "https://images.squarespace-cdn.com/content/v1/5db7d5b8c56cb031ac95e72c/1575026646139-PH0SERUKMYSVA99G2IM3/ke17ZwdGBToddI8pDm48kMR1yAHb8bPoH1-OdajP2rZZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpya-Yv2-AUIrtyc_1d9d84jKAfrgH35AgL5HDK7jKFTEAbkVb2mHFRzAaMt_-j0ggg/catgrass_optimze%281%29.jpg";
 
@@ -53,13 +53,13 @@ function AllCategories() {
                 <img
                   id="bigImage"
                   style={{ width: "360px", height: " 210px" }}
-                  src={BigImage}
+                  // src={BigImage}
                   alt=""
                 />
               </div>
             </div>
 
-            <div className="row pt-3">{imagesList}</div>
+            {/* <div className="row pt-3">{imagesList}</div> */}
           </div>
 
           <div className="col-10 col-md-8">
@@ -99,4 +99,4 @@ function AllCategories() {
     </div>
   );
 }
-export default AllCategories;
+export default Product;

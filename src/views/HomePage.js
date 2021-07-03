@@ -126,7 +126,7 @@ function HomePage() {
                 </div>
                 <div className="col-md-8">
                   <div className="card-body">
-                    <a className="card-title" href="">
+                    <a className=" card-title" rhef="">
                       Women's Dresses
                     </a>
                     <p className="card-text ">
