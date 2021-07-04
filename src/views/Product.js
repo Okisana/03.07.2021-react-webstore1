@@ -5,9 +5,9 @@ import image3 from "../images/ddress3.jpeg";
 import image4 from "../images/ddress4.jpeg";
 
 function Product() {
-  const images = [image1, image2, image3, image4];
+  const images = [image2, image3, image4];
 
-  const [BigImage, setImage] = useState(images[0]);
+  const [BigImage, setImage] = useState(image1);
 
   const updateImage = (event) => {
     setImage(event.target.src);
@@ -19,7 +19,7 @@ function Product() {
         <img
           onClick={updateImage}
           className="imgRow"
-          style={{ maxWidth: " 110px", height: " 75px", marginBottom: "10px" }}
+          style={{ maxWidth: "100%", height: "10%", marginBottom: "10px" }}
           src={imgElement}
           alt=""
         />
