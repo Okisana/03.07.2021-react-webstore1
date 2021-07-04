@@ -1,65 +1,68 @@
-import product7 from '../images/ddress2.jpeg';
-import product8 from '../images/shop/dBlack.jpg';
-import ProductCount from '../components/ProductCount';
-
-function AllTabs() {
+import { NavLink } from "react-router-dom";
+import product7 from "../images/ddress2.jpeg";
+import product8 from "../images/shop/dBlack.jpg";
+function Tabs() {
   return (
     <div className="container">
-    <nav>
-      <ol className="breadcrumb">
-        <li className="breadcrumb-item">
-          <a className="pageLink" href="">
-            Home
-          </a>
-        </li>
-        <li className="breadcrumb-item active" aria-current="page">
-          Categories
-        </li>
-      </ol>
-    </nav>
+      <nav>
+        <ol className="breadcrumb">
+          <li className="breadcrumb-item">
+            <NavLink exact to="/">
+              Home
+            </NavLink>
+          </li>
+          <li className="breadcrumb-item active" aria-current="page">
+            Categories
+          </li>
+        </ol>
+      </nav>
 
-    <div>
-      {/* <div className="container"> */}
+      <div>
+        {/* <div className="container"> */}
         <ul
           className="nav nav-pills mb-3 bg-light border-bottom"
           id="pills-tab"
-          role="tablist">
+          role="tablist"
+        >
           <li className="nav-item border" role="presentation">
             <button
               className="nav-link tabs active"
-              id="pills-home-tab"
+              id="pills-product-tab"
               data-bs-toggle="pill"
-              data-bs-target="#pills-home"
+              data-bs-target="#pills-product"
               type="button"
               role="tab"
-              aria-controls="pills-home"
-              aria-selected="true">
+              aria-controls="pills-product"
+              aria-selected="true"
+            >
               Products
             </button>
           </li>
           <li className="nav-item border" role="presentation">
             <button
               className="nav-link tabs"
-              id="pills-profile-tab"
+              id="pills-address-tab"
               data-bs-toggle="pill"
-              data-bs-target="#pills-profile"
+              data-bs-target="#pills-address"
               type="button"
               role="tab"
-              aria-controls="pills-profile"
-              aria-selected="false">
+              aria-controls="pills-address"
+              aria-selected="false"
+            >
               Address
             </button>
           </li>
           <li className="nav-item border" role="presentation">
             <button
               className="nav-link tabs"
-              id="pills-contact-tab"
+              id="pills-summary-tab"
               data-bs-toggle="pill"
-              data-bs-target="#pills-contact"
+              data-bs-target="#pills-summary"
               type="button"
               role="tab"
-              aria-controls="pills-contact"
-              aria-selected="false">
+              aria-controls="pills-summary"
+              aria-selected="false"
+            >
               Summary
             </button>
           </li>
@@ -68,13 +71,14 @@ function AllTabs() {
         <div className="tab-content pb-3" id="pills-tabContent">
           <div
             className="tab-pane fade show active"
-            id="pills-home"
+            id="pills-product"
             role="tabpanel"
-            aria-labelledby="pills-home-tab">
+            aria-labelledby="pills-product-tab"
+          >
             <div className="row mt-3">
               <p className="fs-4">Chosen products</p>
             </div>
-            <table style={{ width: '100%' }}>
+            <table style={{ width: "100%" }}>
               <tr className="trTop">
                 <th></th>
                 <th>Product</th>
@@ -86,7 +90,6 @@ function AllTabs() {
 
               <tr className="productCart">
                 <td>
-                  {' '}
                   <img
                     className=" img-fluid tdImage"
                     src={product7}
@@ -97,7 +100,9 @@ function AllTabs() {
                 <td className="qF">
                   <span className="quantity">1</span>
                   <button className=" btn btn-danger fw-bold btnPlus">+</button>
-                  <button className=" btn btn-danger fw-bold btnMinus">-</button>
+                  <button className=" btn btn-danger fw-bold btnMinus">
+                    -
+                  </button>
                 </td>
 
                 <td>
@@ -109,16 +114,16 @@ function AllTabs() {
                   <span>EUR</span>
                 </td>
                 <td>
-                  {' '}
+                  {" "}
                   <button className=" btn btn-danger fw-bold remove">
                     Remove
-                  </button>{' '}
+                  </button>{" "}
                 </td>
               </tr>
 
               <tr className="productCart">
                 <td>
-                  {' '}
+                  {" "}
                   <img
                     className=" img-fluid tdImage
                     "
@@ -130,7 +135,9 @@ function AllTabs() {
                 <td className="qB">
                   <span className="quantity">1</span>
                   <button className=" btn btn-danger fw-bold btnPlus">+</button>
-                  <button className=" btn btn-danger fw-bold btnMinus">-</button>
+                  <button className=" btn btn-danger fw-bold btnMinus">
+                    -
+                  </button>
                 </td>
 
                 <td>
@@ -142,10 +149,10 @@ function AllTabs() {
                   <span>EUR</span>
                 </td>
                 <td>
-                  {' '}
+                  {" "}
                   <button className=" btn btn-danger fw-bold remove">
                     Remove
-                  </button>{' '}
+                  </button>{" "}
                 </td>
               </tr>
             </table>
@@ -156,6 +163,30 @@ function AllTabs() {
 
             <div className="epmty5"></div>
           </div>
+
+          {/* SECOND TAB */}
+          <div
+            className="tab-pane fade"
+            id="pills-address"
+            role="tabpanel"
+            aria-labelledby="pills-address-tab"
+          >
+            <div className="row mt-3">
+              <p className="fs-4">HELLO</p>
+            </div>
+          </div>
+
+          {/* THIRD TAB */}
+          <div
+            className="tab-pane fade"
+            id="pills-summary"
+            role="tabpanel"
+            aria-labelledby="pills-summary-tab"
+          >
+            <div className="row mt-3">
+              <p className="fs-4">WORLD</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -164,4 +195,4 @@ function AllTabs() {
 
   );
 }
-export default AllTabs;
+export default Tabs;

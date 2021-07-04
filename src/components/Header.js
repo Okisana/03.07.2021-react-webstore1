@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import logo from "../images/logo.png";
-import './header.css';
+import "./header.css";
 
 function Header() {
   const [mainMenuVisible, setMainMenuVisible] = useState(true);
@@ -21,11 +21,11 @@ function Header() {
 
   return (
     <div className="aligned-right">
-          {/* <div className="aligned-right"> */}
+      {/* <div className="aligned-right"> */}
       <nav className="navbar form-inline-end navbar-expand-lg navbar-light bg-light">
         <NavLink exact to="/">
           {/* <img src={logo} width="120" height="40" alt="logo" /> */}
-          <img src={logo} width="100%"  alt="logo" />
+          <img src={logo} width="100%" alt="logo" />
         </NavLink>
         <div className="container-fluid form-inline">
           <button
@@ -49,10 +49,9 @@ function Header() {
               <NavLink className="nav-link" to="/categories">
                 Categories
               </NavLink>
-              <NavLink className="nav-link" to="/alltabs">
+              <NavLink className="nav-link" to="/tabs">
                 Cart
               </NavLink>
-    
             </div>
           </div>
         </div>

@@ -1,4 +1,6 @@
+import { NavLink } from "react-router-dom";
 import "./Style2.css";
+
 import product1 from "../images/shop/dBlack.jpg";
 import product2 from "../images/shop/dRed1.jpg";
 import product3 from "../images/shop/dress3.jpg";
@@ -8,18 +10,27 @@ import product6 from "../images/shop/dress1.jpg";
 import img from "../images/shop/slider-2.jpg";
 
 function Category() {
+  const modalWindow = () => {
+    alert("Your item was added to cart");
+  };
   return (
     <div>
       <div class="container">
         <nav>
           <ol class="breadcrumb">
             <li class="breadcrumb-item">
-              <a class="pageLink" href="">
+              <NavLink class="pageLink" exact to="/">
                 Home
-              </a>
+              </NavLink>
             </li>
+            <li class="breadcrumb-item">
+              <NavLink class="pageLink" exact to="/categories">
+                Categories
+              </NavLink>
+            </li>
+
             <li class="breadcrumb-item active" aria-current="page">
-              Categories
+              Category
             </li>
           </ol>
         </nav>
@@ -37,20 +48,19 @@ function Category() {
               </div>
               <div class="col-12 col-sm-9">
                 <div class="card-body">
-                  <a class="article-title" href="">
-                    Dresses
-                  </a>
+                  <h5 class="article-title">Dresses</h5>
                   <p class="card-text articleText">
                     From black dresses you’ll wear time and time again to smock
                     styles perfect for the months ahead, our collection of
-                    dresses for women has something for everyone. Second Skin has an
-                    array of different styles for you to feel yourself in, from
-                    mini and midi lengths to lace and gingham styles, while Second Skin
-                    has all your wedding needs covered. Whether you’re getting
-                    married or attending a wedding, shop from embroidered and
-                    satin styles to blush and white dresses. Take a look at &
-                    Other Stories for casual staples or check out Topshop for
-                    ribbed bodycons and ditsy floral prints.
+                    dresses for women has something for everyone. Second Skin
+                    has an array of different styles for you to feel yourself
+                    in, from mini and midi lengths to lace and gingham styles,
+                    while Second Skin has all your wedding needs covered.
+                    Whether you’re getting married or attending a wedding, shop
+                    from embroidered and satin styles to blush and white
+                    dresses. Take a look at & Other Stories for casual staples
+                    or check out Topshop for ribbed bodycons and ditsy floral
+                    prints.
                   </p>
                 </div>
               </div>
@@ -70,13 +80,17 @@ function Category() {
                   />
                   <div class="card-body d-flex flex-column justify-content-between">
                     <div>
-                      <a href="">
+                      <NavLink to="/product">
                         <h5 class="card-text mb-2 ">Summer black dress</h5>
-                      </a>
+                      </NavLink>
                       <h4 class="card-title mb-3">€19.99</h4>
                     </div>
                     <div class="d-grid gap">
-                      <button class=" btn btn-danger fw-bold" type="button">
+                      <button
+                        onClick={modalWindow}
+                        class=" btn btn-danger fw-bold"
+                        type="button"
+                      >
                         Add to Cart
                       </button>
                     </div>
@@ -91,14 +105,18 @@ function Category() {
                   />
                   <div class="card-body d-flex flex-column justify-content-between">
                     <div>
-                      <a href="">
+                      <NavLink to="/product">
                         <h5 class="card-text mb-2">Openwork dress</h5>
-                      </a>
+                      </NavLink>
                       <h4 class="card-title mb-3">€34.99</h4>
                     </div>
 
                     <div class="d-grid gap ">
-                      <button class="btn btn-danger fw-bold" type="button ">
+                      <button
+                        onClick={modalWindow}
+                        class="btn btn-danger fw-bold"
+                        type="button "
+                      >
                         Add to Cart
                       </button>
                     </div>
@@ -113,14 +131,18 @@ function Category() {
                   />
                   <div class="card-body d-flex flex-column justify-content-between">
                     <div>
-                      <a href="">
+                      <NavLink to="/product">
                         <h5 class="card-text mb-2">Midi dress</h5>
-                      </a>
+                      </NavLink>
                       <h4 class="card-title mb-3">€42.99</h4>
                     </div>
 
                     <div class="d-grid gap ">
-                      <button class="btn btn-danger fw-bold" type="button ">
+                      <button
+                        onClick={modalWindow}
+                        class="btn btn-danger fw-bold"
+                        type="button "
+                      >
                         Add to Cart
                       </button>
                     </div>
@@ -137,13 +159,17 @@ function Category() {
                   />
                   <div class="card-body d-flex flex-column justify-content-between">
                     <div>
-                      <a href="">
+                      <NavLink to="/product">
                         <h5 class="card-text mb-2">Red dress</h5>
-                      </a>
+                      </NavLink>
                       <h4 class="card-title mb-3">€27.99</h4>
                     </div>
                     <div class="d-grid gap">
-                      <button class=" btn btn-danger fw-bold" type="button ">
+                      <button
+                        onClick={modalWindow}
+                        class=" btn btn-danger fw-bold"
+                        type="button "
+                      >
                         Add to Cart
                       </button>
                     </div>
@@ -158,14 +184,18 @@ function Category() {
                   />
                   <div class="card-body d-flex flex-column justify-content-between">
                     <div>
-                      <a href="">
+                      <NavLink to="/product">
                         <h5 class="card-text mb-2">Striped dress</h5>
-                      </a>
+                      </NavLink>
                       <h4 class="card-title mb-3">€40.99</h4>
                     </div>
 
                     <div class="d-grid gap ">
-                      <button class="btn btn-danger fw-bold" type="button ">
+                      <button
+                        onClick={modalWindow}
+                        class="btn btn-danger fw-bold"
+                        type="button "
+                      >
                         Add to Cart
                       </button>
                     </div>
@@ -180,14 +210,18 @@ function Category() {
                   />
                   <div class="card-body d-flex flex-column justify-content-between">
                     <div>
-                      <a href="">
+                      <NavLink to="/product">
                         <h5 class="card-text mb-2">Classic blue dress</h5>
-                      </a>
+                      </NavLink>
                       <h4 class="card-title mb-3">€22.99</h4>
                     </div>
 
                     <div class="d-grid gap ">
-                      <button class="btn btn-danger fw-bold" type="button ">
+                      <button
+                        onClick={modalWindow}
+                        class="btn btn-danger fw-bold"
+                        type="button "
+                      >
                         Add to Cart
                       </button>
                     </div>

@@ -10,9 +10,9 @@ function Categories() {
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
-            <a class="pageLink" href="">
+            <NavLink class="pageLink" exact to="/">
               Home
-            </a>
+            </NavLink>
           </li>
           <li class="breadcrumb-item active" aria-current="page">
             Categories
@@ -34,12 +34,12 @@ function Categories() {
                 <p class="card-text articleText">
                   From black dresses you’ll wear time and time again to smock
                   styles perfect for the months ahead, our collection of dresses
-                  for women has something for everyone. Second Skin has an array of
-                  different styles for you to feel yourself in, from mini and
-                  midi lengths to lace and gingham styles, while Secon Skin has all
-                  your wedding needs covered. Whether you’re getting married or
-                  attending a wedding, shop from embroidered and satin styles to
-                  blush and white dresses. Take a look at & Other Stories for
+                  for women has something for everyone. Second Skin has an array
+                  of different styles for you to feel yourself in, from mini and
+                  midi lengths to lace and gingham styles, while Secon Skin has
+                  all your wedding needs covered. Whether you’re getting married
+                  or attending a wedding, shop from embroidered and satin styles
+                  to blush and white dresses. Take a look at & Other Stories for
                   casual staples or check out Topshop for ribbed bodycons and
                   ditsy floral prints.
                 </p>
@@ -70,9 +70,9 @@ function Categories() {
                   or taste; you can find fresh V-neck tops to enhance your
                   daytime look as well as oversized tops in boyfriend styles for
                   that cosy feel. And we are here to help you add drama, with
-                  bold prints and backless tops, while Second Skin has hundreds of
-                  styles to help you express your individuality. Invent your own
-                  style with our collection of tops for women.
+                  bold prints and backless tops, while Second Skin has hundreds
+                  of styles to help you express your individuality. Invent your
+                  own style with our collection of tops for women.
                 </p>
               </div>
             </div>
