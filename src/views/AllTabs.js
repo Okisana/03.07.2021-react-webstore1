@@ -1,5 +1,7 @@
 import product7 from '../images/ddress2.jpeg';
 import product8 from '../images/shop/dBlack.jpg';
+import ProductCount from '../components/ProductCount';
+
 function AllTabs() {
   return (
     <div className="container">
@@ -157,6 +159,9 @@ function AllTabs() {
         </div>
       </div>
     </div>
+
+
+
   );
 }
 export default AllTabs;

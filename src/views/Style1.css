@@ -2,9 +2,9 @@ body {
   overflow-x: hidden;
   background: radial-gradient(#fff, #ffd6d6);
 }
-.aligned-right {
-  /* background: radial-gradient(#fff, #ffd6d6); */
-}
+/* .aligned-right {
+  background: radial-gradient(#fff, #ffd6d6);
+} */
 .img-carousel {
   object-fit: cover;
   max-width: 100%;
