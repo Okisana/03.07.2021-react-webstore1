@@ -88,8 +88,8 @@ a,
 /*  */
 .nav-link.active {
   background-color: rgb(181, 243, 82) !important;
-} */
-.nav-link.active {
+}
+*/ .nav-link.active {
   background-color: rgb(195, 247, 112) !important;
 }
 a:hover,
@@ -97,7 +97,7 @@ a:hover,
 .tabs:hover {
   /* text-decoration: underline; */
   color: rgb(255, 16, 108) !important;
-/* 
+  /* 
   font-size: 18px; */
 }
 .disabled {
