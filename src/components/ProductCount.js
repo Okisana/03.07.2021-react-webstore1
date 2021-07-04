@@ -22,20 +22,26 @@ import { useState } from "react";
 function ProductCount() {
   const [count1, setCount1] = useState(1);
   const [count2, setCount2] = useState(1);
+  const [total1, setTotal1] = useState(19.99);
+  const [total2, setTotal2] = useState(22.99);
 
   const addCount1 = () => {
     setCount1(count1 + 1);
+    setTotal1(((count1 + 1) * 19.99).toFixed(2));
   };
+
   const diminishCount1 = () => {
     if (count1 === 0) {
       return;
     }
 
     setCount1(count1 - 1);
+    setTotal1(((count1 - 1) * 19.99).toFixed(2));
   };
 
   const addCount2 = () => {
     setCount2(count2 + 1);
+    setTotal2(((count2 + 1) * 22.99).toFixed(2));
   };
   const diminishCount2 = () => {
     if (count2 === 0) {
@@ -43,6 +49,11 @@ function ProductCount() {
     }
 
     setCount2(count2 - 1);
+    setTotal2(((count2 - 1) * 22.99).toFixed(2));
+  };
+
+  const removeProduct = (event) => {
+    event.target.closest(".productCart").remove();
   };
 
   return (
@@ -161,12 +172,15 @@ function ProductCount() {
                   <span>EUR</span>
                 </td>
                 <td>
-                  <span className="totalOneProduct">19.99</span>
+                  <span className="totalOneProduct">{total1}</span>
                   <span>EUR</span>
                 </td>
                 <td>
                   {" "}
-                  <button className=" btn btn-danger fw-bold remove">
+                  <button
+                    onClick={removeProduct}
+                    className=" btn btn-danger fw-bold remove"
+                  >
                     Remove
                   </button>{" "}
                 </td>
@@ -204,14 +218,16 @@ function ProductCount() {
                   <span>EUR</span>
                 </td>
                 <td>
-                  <span className="totalOneProduct">22.99</span>
+                  <span className="totalOneProduct">{total2}</span>
                   <span>EUR</span>
                 </td>
                 <td>
-                  {" "}
-                  <button className=" btn btn-danger fw-bold remove">
+                  <button
+                    onClick={removeProduct}
+                    className=" btn btn-danger fw-bold remove"
+                  >
                     Remove
-                  </button>{" "}
+                  </button>
                 </td>
               </tr>
             </table>
