@@ -1,8 +1,8 @@
 import { useState } from "react";
-import image1 from "../images/ddres1.jpeg";
-import image2 from "../images/ddress2.jpeg";
-import image3 from "../images/ddress3.jpeg";
-import image4 from "../images/ddress4.jpeg";
+import image1 from "../images/y1.jpg";
+import image2 from "../images/y3.jpg";
+import image3 from "../images/y2.jpg";
+import image4 from "../images/y4.jpg";
 
 function Product() {
   const images = [image2, image3, image4];
@@ -19,7 +19,7 @@ function Product() {
         <img
           onClick={updateImage}
           className="imgRow"
-          style={{ maxWidth: "100%", height: "10%", marginBottom: "10px" }}
+          style={{ maxWidth: "100%", marginBottom: "10px" }}
           src={imgElement}
           alt=""
         />

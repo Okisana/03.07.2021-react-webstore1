@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import product7 from "../images/ddress2.jpeg";
+import product7 from "../images/shop/dMidi.jpg";
 import product8 from "../images/shop/dBlack.jpg";
 function Tabs() {
   return (
