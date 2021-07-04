@@ -1,7 +1,7 @@
 // import { useState } from 'react';
 // function ProductCount() {
 //     const [count, setCount] = useState(1);
-    
+
 //     const addCount = () => {
 //         setCount(count + 1);
 //     }
@@ -15,38 +15,35 @@
 // export default ProductCount;
 
 import { NavLink } from "react-router-dom";
-import product7 from "../images/ddress2.jpeg";
+import product7 from "../images/shop/dMidi.jpg";
 import product8 from "../images/shop/dBlack.jpg";
-import { useState } from 'react';
+import { useState } from "react";
 
 function ProductCount() {
-    const [count1, setCount1] = useState(1);
-    const [count2, setCount2] = useState(1);
+  const [count1, setCount1] = useState(1);
+  const [count2, setCount2] = useState(1);
 
-    const addCount1 = () => {
-        setCount1(count1 + 1);
-    }
-const diminishCount1 = () => {
+  const addCount1 = () => {
+    setCount1(count1 + 1);
+  };
+  const diminishCount1 = () => {
     if (count1 === 0) {
-        return
+      return;
     }
 
-setCount1(count1 - 1);
-}
+    setCount1(count1 - 1);
+  };
 
-    
-const addCount2 = () => {
+  const addCount2 = () => {
     setCount2(count2 + 1);
-}
-const diminishCount2 = () => {
-if (count2 === 0) {
-    return
-}
+  };
+  const diminishCount2 = () => {
+    if (count2 === 0) {
+      return;
+    }
 
-setCount2(count2 - 1);
-}
-
-
+    setCount2(count2 - 1);
+  };
 
   return (
     <div className="container">
@@ -145,8 +142,16 @@ setCount2(count2 - 1);
                 <td>Floral dress</td>
                 <td className="qF">
                   <span className="quantity">{count1}</span>
-                  <button onClick={addCount1} className=" btn btn-danger fw-bold btnPlus">+</button>
-                  <button onClick={diminishCount1} className=" btn btn-danger fw-bold btnMinus">
+                  <button
+                    onClick={addCount1}
+                    className=" btn btn-danger fw-bold btnPlus"
+                  >
+                    +
+                  </button>
+                  <button
+                    onClick={diminishCount1}
+                    className=" btn btn-danger fw-bold btnMinus"
+                  >
                     -
                   </button>
                 </td>
@@ -180,8 +185,16 @@ setCount2(count2 - 1);
                 <td>Classic black dress</td>
                 <td className="qB">
                   <span className="quantity">{count2}</span>
-                  <button onClick={addCount2} className=" btn btn-danger fw-bold btnPlus">+</button>
-                  <button onClick={diminishCount2} className=" btn btn-danger fw-bold btnMinus">
+                  <button
+                    onClick={addCount2}
+                    className=" btn btn-danger fw-bold btnPlus"
+                  >
+                    +
+                  </button>
+                  <button
+                    onClick={diminishCount2}
+                    className=" btn btn-danger fw-bold btnMinus"
+                  >
                     -
                   </button>
                 </td>
@@ -236,9 +249,6 @@ setCount2(count2 - 1);
         </div>
       </div>
     </div>
-
-
-
   );
 }
 
