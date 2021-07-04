@@ -33,7 +33,7 @@ function App() {
           <Route path="/tabs">
             <Tabs />
           </Route>
-         
+
           <Route path="/productcount">
             <ProductCount />
           </Route>

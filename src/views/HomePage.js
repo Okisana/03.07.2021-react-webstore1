@@ -1,8 +1,8 @@
 import "./Style1.css";
 import { NavLink } from "react-router-dom";
-import trousersCat from "../images/shop/trousers1.jpg";
-import topsCat from "../images/shop/top1.jpg";
-import dressesCat from "../images/shop/dress2.jpg";
+import trousersCat from "../images/trc.jpg";
+import topsCat from "../images/topc.jpg";
+import dressesCat from "../images/y1.jpg";
 import sliderImg0 from "../images/shop/slider-0.jpg";
 import sliderImg1 from "../images/shop/slider-1.jpg";
 import sliderImg2 from "../images/shop/slider-2.jpg";

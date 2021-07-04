@@ -1,8 +1,8 @@
 import { NavLink } from "react-router-dom";
 import "./Style2.css";
-import dressCatImg from "../images/dresses2.jpeg";
-import topCatImg from "../images/shop/topcat.jpg";
-import trousersCatImg from "../images/shop/trcat.jpeg";
+import dressCatImg from "../images/drc.jpg";
+import topCatImg from "../images/tc.jpg";
+import trousersCatImg from "../images/trc1.jpg";
 
 function Categories() {
   return (

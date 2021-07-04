@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import "./Style2.css";
 
-import product1 from "../images/shop/dBlack.jpg";
+import product1 from "../images/y3.jpg";
 import product2 from "../images/shop/dRed1.jpg";
 import product3 from "../images/shop/dress3.jpg";
 import product4 from "../images/ddress4.jpeg";
@@ -81,7 +81,7 @@ function Category() {
                   <div class="card-body d-flex flex-column justify-content-between">
                     <div>
                       <NavLink to="/product">
-                        <h5 class="card-text mb-2 ">Summer black dress</h5>
+                        <h5 class="card-text mb-2 ">Summer yellow dress</h5>
                       </NavLink>
                       <h4 class="card-title mb-3">€19.99</h4>
                     </div>
