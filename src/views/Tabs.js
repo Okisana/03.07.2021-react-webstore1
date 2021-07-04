@@ -172,28 +172,7 @@ function Tabs() {
             aria-labelledby="pills-address-tab"
           >
             <div className="row mt-3">
-              <div className="col-6">
-                <p>Shipping address</p>
-                <textarea
-                  style={{
-                    resize: "both",
-                    height: "200px",
-                    width: "300px",
-                    magrin: "20px",
-                  }}
-                />
-              </div>
-              <div className="col-6">
-                <p>Shipping address</p>
-                <textarea
-                  style={{
-                    resize: "both",
-                    height: "200px",
-                    width: "300px",
-                    magrin: "20px",
-                  }}
-                />
-              </div>
+              <p className="fs-4">HELLO</p>
             </div>
           </div>
 
