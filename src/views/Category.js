@@ -43,9 +43,9 @@ function Category() {
                   <p class="card-text articleText">
                     From black dresses you’ll wear time and time again to smock
                     styles perfect for the months ahead, our collection of
-                    dresses for women has something for everyone. ANOK has an
+                    dresses for women has something for everyone. Second Skin has an
                     array of different styles for you to feel yourself in, from
-                    mini and midi lengths to lace and gingham styles, while ANOK
+                    mini and midi lengths to lace and gingham styles, while Second Skin
                     has all your wedding needs covered. Whether you’re getting
                     married or attending a wedding, shop from embroidered and
                     satin styles to blush and white dresses. Take a look at &

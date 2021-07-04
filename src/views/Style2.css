@@ -50,3 +50,58 @@ span {
   max-width: 70%;
   max-height: 70%;
 }
+
+/* ========= PAGE 5 & navigation  ========== */
+.trTop {
+  border-bottom: none;
+}
+
+.epmty5 {
+  height: 60px;
+}
+.tdImage {
+  max-width: 130px;
+  max-height: 200px;
+  /* margin: 0 auto; */
+  margin: 10px;
+}
+/* tr {
+  border-bottom: 0.01rem solid grey;
+} */
+.bigTotal {
+  text-align: right;
+  margin-right: 120px;
+  margin-top: 20px;
+}
+.productCart {
+  border-bottom: 0.01rem solid grey;
+}
+a,
+.nav-link,
+.tabs {
+  color: rgb(180, 7, 74) !important;
+}
+/* .nav-link,
+.tabs {
+  color: rgb(236, 33, 111) !important;
+}
+/*  */
+.nav-link.active {
+  background-color: rgb(181, 243, 82) !important;
+} */
+.nav-link.active {
+  background-color: rgb(195, 247, 112) !important;
+}
+a:hover,
+.nav-link:hover,
+.tabs:hover {
+  /* text-decoration: underline; */
+  color: rgb(255, 16, 108) !important;
+/* 
+  font-size: 18px; */
+}
+.disabled {
+  pointer-events: none;
+  color: goldenrod;
+  opacity: 0.7;
+}

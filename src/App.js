@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import HomePage from "./views/HomePage";
 import Categories from "./views/Categories";
+import AllTabs from"./views/AllTabs";
 
 import Page404 from "./views/Page404";
 import Category from "./views/Category";
@@ -27,6 +28,9 @@ function App() {
 
           <Route path="/product">
             <Product />
+          </Route>
+          <Route path="/alltabs">
+            <AllTabs />
           </Route>
 
           <Route>

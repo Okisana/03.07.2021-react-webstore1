@@ -131,7 +131,7 @@ function HomePage() {
                       Women's Dresses
                     </NavLink>
                     <p className="card-text ">
-                      ANOK DESIGN has an array of different styles for you to
+                      Second Skin boutique has an array of different styles for you to
                       feel yourself in, from mini and midi lengths to lace and
                       gingham styles.Take a look for casual staples or check out
                       for ribbed bodycons and ditsy floral prints.
@@ -158,11 +158,11 @@ function HomePage() {
                       Tops
                     </NavLink>
                     <p className="card-text">
-                      Discover a range of women's tops at ANOK. Crop tops to
+                      Discover a range of women's tops at Second Skin boutique. Crop tops to
                       off-the-shoulder and going-out tops, shop online for every
                       look. We all are in need of stylish tops for every
                       occasion. Stop searching and find yours now online at
-                      ANOK.
+                      Second Skin boutique.
                     </p>
                   </div>
                 </div>
