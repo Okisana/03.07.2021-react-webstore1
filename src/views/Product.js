@@ -1,25 +1,13 @@
 import { useState } from "react";
+import image1 from "../images/ddres1.jpeg";
+import image2 from "../images/ddress2.jpeg";
+import image3 from "../images/ddress3.jpeg";
+import image4 from "../images/ddress4.jpeg";
 
 function Product() {
-  const img1 =
-    "https://images.squarespace-cdn.com/content/v1/5db7d5b8c56cb031ac95e72c/1575026646139-PH0SERUKMYSVA99G2IM3/ke17ZwdGBToddI8pDm48kMR1yAHb8bPoH1-OdajP2rZZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpya-Yv2-AUIrtyc_1d9d84jKAfrgH35AgL5HDK7jKFTEAbkVb2mHFRzAaMt_-j0ggg/catgrass_optimze%281%29.jpg";
+  const images = [image1, image2, image3, image4];
 
-  const img2 =
-    "https://i.natgeofe.com/n/f0dccaca-174b-48a5-b944-9bcddf913645/01-cat-questions-nationalgeographic_1228126.jpg";
-
-  const img3 =
-    "https://allaboutcats.com/wp-content/uploads/2021/01/Cat-Grass-1-1.jpg";
-
-  const img4 =
-    "https://1.bp.blogspot.com/-JB-pmbnAPPg/V9fugON7PMI/AAAAAAAABmQ/UUIwqj_0JgYGXB_l3tqjiboaIoeL8bS4wCLcB/s1600/717_3601568.JPG";
-  const img5 =
-    "https://www.catontheweb.com/wp-content/uploads/2014/09/cat-eating-grass-620x330.jpg";
-  const img6 =
-    "https://www.petfriendlyhouse.com/wp-content/uploads/2018/09/why-do-cats-eat-grass.jpg";
-
-  const images = [img1, img2, img3, img4, img5, img6];
-
-  const [BigImage, setImage] = useState(images[2]);
+  const [BigImage, setImage] = useState(images[0]);
 
   const updateImage = (event) => {
     setImage(event.target.src);
@@ -43,7 +31,7 @@ function Product() {
     <div>
       <div className="container">
         <div className="row pt-3">
-          <p>Cool article</p>
+          <p>All about dresses</p>
         </div>
 
         <div className="row mt-1">
@@ -52,47 +40,69 @@ function Product() {
               <div id="bigDiv">
                 <img
                   id="bigImage"
-                  style={{ width: "360px", height: " 210px" }}
-                  // src={BigImage}
+                  style={{
+                    width: "250px",
+                    height: " 300px",
+                    marginLeft: "30px",
+                  }}
+                  src={BigImage}
                   alt=""
                 />
               </div>
             </div>
 
-            {/* <div className="row pt-3">{imagesList}</div> */}
+            <div className="row pt-3">{imagesList}</div>
           </div>
 
           <div className="col-10 col-md-8">
             <p className="p3">
-              Cats are quirky creatures with many curious habits, but one odd
-              behavior that has long puzzled cat lovers is grass eating. Though
-              indoor-outdoor cats obviously have more access to the green stuff,
-              even indoor cats are known to nibble on blades of grass if they go
-              outside for some fresh air or to explore. First, eating plant
-              material is very common: 71 percent of cats in the study nibbled
-              plants at least six times in their life, and 61 percent ate plant
-              material at least 10 times. Another finding was that most cats
-              (91%) were acting normally and did not appear to be sick in the
-              time immediately preceding the grass eating. Of all the cats that
-              ate plant material, only about 27 percent frequently vomited after
-              eating the green stuff.
+              Midi Dress Sitting between a maxi and a mini dress, the midi is
+              what everyone needs for the times when you’re unsure of the
+              formality of an event. This style can have any neckline or sleeve
+              length, so it’s great for any body shape. Pull-on tights and ankle
+              boots for a perfect winter look, or grab a pair of flats and a
+              cute straw hat and have a stylish picnic!
             </p>
             <p className="p3">
-              Cats are obligate carnivores, which means they are biologically
-              designed to eat a primarily meat-based diet. Although cats can the
-              digest grains, fruits, and vegetables found in commercial cat
-              food, cats are not true omnivores, so plant material like grass
-              would not be part of their diet in the wild.
+              Off the Shoulder Take the plunge and keep your shoulders exposed
+              in an off-the-shoulder dress. These dresses showcase your
+              shoulders, while maintaining a sleeve or ruffle on the bicep. The
+              off-shoulder style is great for those who want to exhibit their
+              shoulders and arms but don’t want the commitment of a strapless
+              look.
             </p>
             <p className="p3">
-              Recently, researchers at the University of California, Davis,
-              School of Veterinary Medicine conducted an online survey of more
-              than 1,000 cat owners asking about their cats’ penchant for eating
-              grass and plants. The findings, presented in summer 2019 at the
-              annual meeting of the International Society for Applied Ethology
-              in Bergen, Norway, revealed some interesting facts about cats
-              eating grass.
+              Bodycon Dress The bodycon is a tight-fitting dress that hugs your
+              figure and accentuates your assets. They’re often made of stretchy
+              material and are perfect for a night out on the town. This dress
+              is ideal for those with an hourglass figure, as it flatters the
+              beautiful curves!
             </p>
+
+            <div class="row row-cols-1 row-cols-md-3 mb-3 justify-content-center mt-5">
+              <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                  <div class="card-header py-3">
+                    <h4 class="my-0 fw-normal text-center">Floral dress</h4>
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title pricing-card-title text-center">
+                      EUR 19.99
+                    </h4>
+
+                    <button
+                      onClick={() => {
+                        alert("Item was added to cart");
+                      }}
+                      type="button"
+                      class="w-100 btn btn-danger fw-bold"
+                    >
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

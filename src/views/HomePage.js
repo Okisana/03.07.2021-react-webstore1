@@ -131,10 +131,9 @@ function HomePage() {
                       Women's Dresses
                     </NavLink>
                     <p className="card-text ">
-                      Second Skin boutique has an array of different styles for you to
-                      feel yourself in, from mini and midi lengths to lace and
-                      gingham styles.Take a look for casual staples or check out
-                      for ribbed bodycons and ditsy floral prints.
+                      Second Skin boutique has an array of different styles for
+                      you to feel yourself in, from mini and midi lengths to
+                      lace and gingham styles.Take a look for casual staple.
                     </p>
                   </div>
                 </div>
@@ -158,11 +157,9 @@ function HomePage() {
                       Tops
                     </NavLink>
                     <p className="card-text">
-                      Discover a range of women's tops at Second Skin boutique. Crop tops to
-                      off-the-shoulder and going-out tops, shop online for every
-                      look. We all are in need of stylish tops for every
-                      occasion. Stop searching and find yours now online at
-                      Second Skin boutique.
+                      Discover a range of women's tops at Second Skin boutique.
+                      Crop tops to off-the-shoulder and going-out tops, shop
+                      online for every look. We all are in need of stylish tops.
                     </p>
                   </div>
                 </div>
