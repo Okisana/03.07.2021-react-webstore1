@@ -325,6 +325,9 @@ function Tabs() {
         </div>
       </div>
     </div>
+
+
+
   );
 }
 export default Tabs;

@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import HomePage from "./views/HomePage";
 import Categories from "./views/Categories";
 import Tabs from "./views/Tabs";
+import ProductCount from "./components/ProductCount";
 
 import Page404 from "./views/Page404";
 import Category from "./views/Category";
@@ -31,6 +32,10 @@ function App() {
           </Route>
           <Route path="/tabs">
             <Tabs />
+          </Route>
+         
+          <Route path="/productcount">
+            <ProductCount />
           </Route>
 
           <Route>
