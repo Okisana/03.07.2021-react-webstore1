@@ -20,30 +20,30 @@ import product8 from "../images/shop/dBlack.jpg";
 import { useState } from 'react';
 
 function ProductCount() {
-    const [count, setCount] = useState(1);
+    const [count1, setCount1] = useState(1);
     const [count2, setCount2] = useState(1);
 
-    const addCount = () => {
-        setCount(count + 1);
+    const addCount1 = () => {
+        setCount1(count1 + 1);
     }
-const diminishCount = () => {
-    if (count === 0) {
+const diminishCount1 = () => {
+    if (count1 === 0) {
         return
     }
 
-setCount(count - 1);
+setCount1(count1 - 1);
 }
 
     
 const addCount2 = () => {
-    setCount(count2 + 1);
+    setCount2(count2 + 1);
 }
 const diminishCount2 = () => {
 if (count2 === 0) {
     return
 }
 
-setCount(count2 - 1);
+setCount2(count2 - 1);
 }
 
 
@@ -144,9 +144,9 @@ setCount(count2 - 1);
                 </td>
                 <td>Floral dress</td>
                 <td className="qF">
-                  <span className="quantity">{count}</span>
-                  <button onClick={addCount} className=" btn btn-danger fw-bold btnPlus">+</button>
-                  <button onClick={diminishCount} className=" btn btn-danger fw-bold btnMinus">
+                  <span className="quantity">{count1}</span>
+                  <button onClick={addCount1} className=" btn btn-danger fw-bold btnPlus">+</button>
+                  <button onClick={diminishCount1} className=" btn btn-danger fw-bold btnMinus">
                     -
                   </button>
                 </td>
@@ -179,7 +179,7 @@ setCount(count2 - 1);
                 </td>
                 <td>Classic black dress</td>
                 <td className="qB">
-                  <span className="quantity">{count}</span>
+                  <span className="quantity">{count2}</span>
                   <button onClick={addCount2} className=" btn btn-danger fw-bold btnPlus">+</button>
                   <button onClick={diminishCount2} className=" btn btn-danger fw-bold btnMinus">
                     -
