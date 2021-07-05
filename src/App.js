@@ -1,14 +1,13 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import HomePage from "./views/HomePage";
-import Categories from "./views/Categories";
-import Tabs from "./views/Tabs";
-import ProductCount from "./components/ProductCount";
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import HomePage from './views/HomePage';
+import Categories from './views/Categories';
+import Tabs from './views/Tabs';
 
-import Page404 from "./views/Page404";
-import Category from "./views/Category";
-import Product from "./views/Product";
+import Page404 from './views/Page404';
+import Category from './views/Category';
+import Product from './views/Product';
 function App() {
   return (
     <div>
@@ -33,11 +32,6 @@ function App() {
           <Route path="/tabs">
             <Tabs />
           </Route>
-
-          <Route path="/productcount">
-            <ProductCount />
-          </Route>
-
           <Route>
             <Page404 />
           </Route>
