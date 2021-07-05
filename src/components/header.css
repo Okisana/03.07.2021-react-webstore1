@@ -2,5 +2,14 @@
     display: flex;
   justify-content: flex-end;
   text-align: right;
-  background: radial-gradient(#fff, #ffd6d6);
+  background: radial-gradient(#fff, #ffd6d6) !important;
+} */
+/* .navbar-right {
+    display: flex;
+    justify-content: flex-end !important;
+    text-align: right !important;
+    background: radial-gradient(#fff, #ffd6d6) !important;
+} */
+/* .navbar form-inline-end {
+    margin-bottom: 0;
 } */

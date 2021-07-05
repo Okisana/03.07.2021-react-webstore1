@@ -27,7 +27,7 @@ function Header() {
           {/* <img src={logo} width="120" height="40" alt="logo" /> */}
           <img src={logo} width="100%" alt="logo" />
         </NavLink>
-        <div className="container-fluid form-inline">
+        <div className="container-fluid form-inline navbar-right">
           <button
             onClick={toggleMainMenu}
             className={menuTogglerButtonClasses}
