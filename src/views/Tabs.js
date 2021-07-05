@@ -7,7 +7,7 @@ function Tabs() {
   const [count2, setCount2] = useState(1);
   const [total1, setTotal1] = useState(19.99);
   const [total2, setTotal2] = useState(22.99);
-  // const [totalAll, setTotalAll] = useState(42.98);
+  const [totalAll, setTotalAll] = useState(42.98);
 
   const addCount1 = () => {
     setCount1(count1 + 1);
@@ -35,10 +35,6 @@ function Tabs() {
     setCount2(count2 - 1);
     setTotal2(((count2 - 1) * 22.99).toFixed(2));
   };
-
-  // const countTotalAll = () => {
-  //   setTotalAll(total1.toFixed(2) + total2.toFixed(2));
-  // };
 
   const removeProduct = (event) => {
     event.target.closest(".productCart").remove();
@@ -220,7 +216,7 @@ function Tabs() {
             </table>
 
             <h3 className="bigTotal">
-              Total: <span className="totalAll">42.98</span> EUR
+              Total: <span className="totalAll">{totalAll}</span> EUR
             </h3>
 
             <div className="epmty5"></div>
