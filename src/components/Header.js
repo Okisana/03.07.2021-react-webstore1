@@ -1,7 +1,6 @@
-import { NavLink } from 'react-router-dom';
-import { useState } from 'react';
-import logo from '../images/logo.png';
-import './header.css';
+import { NavLink } from "react-router-dom";
+import { useState } from "react";
+import logo from "../images/logo.png";
 
 function Header() {
   const [mainMenuVisible, setMainMenuVisible] = useState(true);
@@ -9,14 +8,14 @@ function Header() {
   const toggleMainMenu = () => {
     setMainMenuVisible(!mainMenuVisible);
   };
-  let mainMenuClasses = 'collapse navbar-collapse ';
+  let mainMenuClasses = "collapse navbar-collapse d-flex flex-row-reverse";
   if (mainMenuVisible) {
-    mainMenuClasses += ' show';
+    mainMenuClasses += " show";
   }
 
-  let menuTogglerButtonClasses = 'navbar-toggler';
+  let menuTogglerButtonClasses = "navbar-toggler";
   if (!mainMenuVisible) {
-    menuTogglerButtonClasses += ' collapsed';
+    menuTogglerButtonClasses += " collapsed";
   }
 
   return (
@@ -25,7 +24,7 @@ function Header() {
         <NavLink exact to="/">
           <img src={logo} width="100%" alt="logo" />
         </NavLink>
-        <div className="container-fluid form-inline navbar-right">
+        <div className="container-fluid form-inline ">
           <button
             onClick={toggleMainMenu}
             className={menuTogglerButtonClasses}
@@ -34,12 +33,13 @@ function Header() {
             data-bs-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup"
             aria-expanded="false"
-            aria-label="Toggle navigation">
+            aria-label="Toggle navigation"
+          >
             <span className="navbar-toggler-icon"></span>
           </button>
 
           <div className={mainMenuClasses} id="navbarNavAltMarkup">
-            <div className="navbar-nav ">
+            <div className="navbar-nav">
               <NavLink className="nav-link " exact to="/">
                 Home
               </NavLink>
