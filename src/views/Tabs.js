@@ -7,11 +7,10 @@ function Tabs() {
   const [count2, setCount2] = useState(1);
   const [total1, setTotal1] = useState(19.99);
   const [total2, setTotal2] = useState(22.99);
-  const [totalAll, setTotalAll] = useState(42.98);
 
   const addCount1 = () => {
     setCount1(count1 + 1);
-    setTotal1(((count1 + 1) * 19.99).toFixed(2));
+    setTotal1((count1 + 1) * 19.99);
   };
 
   const diminishCount1 = () => {
@@ -20,12 +19,12 @@ function Tabs() {
     }
 
     setCount1(count1 - 1);
-    setTotal1(((count1 - 1) * 19.99).toFixed(2));
+    setTotal1((count1 - 1) * 19.99);
   };
 
   const addCount2 = () => {
     setCount2(count2 + 1);
-    setTotal2(((count2 + 1) * 22.99).toFixed(2));
+    setTotal2((count2 + 1) * 22.99);
   };
   const diminishCount2 = () => {
     if (count2 === 1) {
@@ -33,11 +32,14 @@ function Tabs() {
     }
 
     setCount2(count2 - 1);
-    setTotal2(((count2 - 1) * 22.99).toFixed(2));
+    setTotal2((count2 - 1) * 22.99);
   };
+
+  const totalAll = total1 + total2;
 
   const removeProduct = (event) => {
     event.target.closest(".productCart").remove();
+    totalAll();
   };
 
   return (
@@ -154,7 +156,7 @@ function Tabs() {
                   <span>EUR</span>
                 </td>
                 <td>
-                  <span className="totalOneProduct">{total1}</span>
+                  <span className="totalOneProduct">{total1.toFixed(2)}</span>
                   <span>EUR</span>
                 </td>
                 <td>
@@ -200,7 +202,7 @@ function Tabs() {
                   <span>EUR</span>
                 </td>
                 <td>
-                  <span className="totalOneProduct">{total2}</span>
+                  <span className="totalOneProduct">{total2.toFixed(2)}</span>
                   <span>EUR</span>
                 </td>
                 <td>
@@ -216,7 +218,7 @@ function Tabs() {
             </table>
 
             <h3 className="bigTotal">
-              Total: <span className="totalAll">{totalAll}</span> EUR
+              Total: <span className="totalAll">{totalAll.toFixed(2)}</span> EUR
             </h3>
 
             <div className="epmty5"></div>
@@ -256,7 +258,7 @@ function Tabs() {
 
             <div className="row my-5 " style={{ marginRight: "210px" }}>
               <h3 className="bigTotal">
-                Total: <span className="totalAll">42.98</span> EUR
+                Total: <span className="totalAll">{totalAll}</span> EUR
               </h3>
             </div>
           </div>
@@ -332,7 +334,9 @@ function Tabs() {
                       <span>EUR</span>
                     </td>
                     <td>
-                      <span className="totalOneProduct">{total1}</span>
+                      <span className="totalOneProduct">
+                        {total1.toFixed(2)}
+                      </span>
                       <span>EUR</span>
                     </td>
                   </tr>
@@ -368,14 +372,17 @@ function Tabs() {
                       <span>EUR</span>
                     </td>
                     <td>
-                      <span className="totalOneProduct">{total2}</span>
+                      <span className="totalOneProduct">
+                        {total2.toFixed(2)}
+                      </span>
                       <span>EUR</span>
                     </td>
                   </tr>
                 </table>
                 <div className="row my-5 mx-5">
                   <h3 className="bigTotal">
-                    Total: <span className="totalAll">42.98</span> EUR
+                    Total:{" "}
+                    <span className="totalAll"> {totalAll.toFixed(2)}</span> EUR
                   </h3>
                 </div>
               </div>
